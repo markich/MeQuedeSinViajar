@@ -23,6 +23,9 @@
                                     <segment title="Etacer"/>
                                     <segment title="Fluviales"/>
                                 </segments>
+                                <connections>
+                                    <action selector="companyValueChanged:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ff0-gS-rIF"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Car Pooling" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIW-DC-9t5">
                                 <rect key="frame" x="20" y="60" width="190" height="24"/>
@@ -41,6 +44,9 @@
                                 <state key="normal" title="Facebook">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="facebookSelected:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ebW-Io-avR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLh-RP-YHa">
                                 <rect key="frame" x="180" y="163" width="120" height="30"/>
@@ -48,6 +54,9 @@
                                 <state key="normal" title="Twitter">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="twitterSelected:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sml-fz-XNk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7u8-zt-xAA">
                                 <rect key="frame" x="20" y="436" width="280" height="30"/>
@@ -55,6 +64,9 @@
                                 <state key="normal" title="Notificar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="doSendNotification:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0wP-VJ-3ng"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -62,6 +74,13 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="badCompanySegmentedControl" destination="GHG-Uq-1fT" id="MGD-i1-uyJ"/>
+                        <outlet property="carpoolingSwitch" destination="1BD-4T-hf5" id="UPN-dh-abD"/>
+                        <outlet property="facebookButton" destination="VTx-JX-vzX" id="hkr-ja-4Wq"/>
+                        <outlet property="notificationButton" destination="7u8-zt-xAA" id="B41-YS-rwU"/>
+                        <outlet property="twitterButton" destination="FLh-RP-YHa" id="xgO-Oa-KgG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
