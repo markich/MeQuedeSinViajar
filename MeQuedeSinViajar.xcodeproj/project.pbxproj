@@ -248,13 +248,13 @@
 		80A3707F180A1DE300533668 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				80A37080180A1E0800533668 /* Service.h */,
-				80A37081180A1E0800533668 /* Service.m */,
+				80A37086180A1ECD00533668 /* MQSVAppConfiguration.h */,
 				80A37083180A1EA400533668 /* APIService.h */,
 				80A37084180A1EA400533668 /* APIService.m */,
-				80A37086180A1ECD00533668 /* MQSVAppConfiguration.h */,
 				80A37087180A219700533668 /* MQSVRequest.h */,
 				80A37088180A219700533668 /* MQSVRequest.m */,
+				80A37080180A1E0800533668 /* Service.h */,
+				80A37081180A1E0800533668 /* Service.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
