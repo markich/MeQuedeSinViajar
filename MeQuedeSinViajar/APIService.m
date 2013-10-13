@@ -48,7 +48,7 @@
 #pragma -
 #pragma mark Public Methods
 
-- (void)sendNotificationWith:(MQSVNotification *)notification CompletionBlock:(APIServiceCompletionBlock)block
+- (void)sendNotificationWith:(MQSVNotification *)notification andCompletionBlock:(APIServiceCompletionBlock)block
 {
     MQSVRequest *request = [MQSVRequest requestWithPath:nil method:HTTP_POST_METHOD];
     
@@ -58,27 +58,28 @@
     
     [request startWithCompletionBlock:^(MQSVRequest *request, NSInteger httpStatusCode, id JSONResponse)
      {
-         NSNumber *completion;
+         NSNumber *completionStatus = nil;
+         NSError *error = nil;
          if (httpStatusCode == HTTPStatusCodeOK)
          {
              NSLog(@"HTTP Status '200' OK");
              
-             completion = [NSNumber numberWithBool:YES];
-             block(completion, nil);
+             completionStatus = [NSNumber numberWithBool:YES];
+             block(completionStatus, error);
          }
          else
          {
              NSString *serverErrorMessage = [JSONResponse objectForKey:@"error"];
              
-             NSError *error = [NSError errorWithDomain:@"MSQV_DOMAIN_ERROR"
+             error = [NSError errorWithDomain:@"MSQV_DOMAIN_ERROR"
                                                   code:httpStatusCode
                                               userInfo:[NSDictionary dictionaryWithObject:serverErrorMessage forKey:NSLocalizedDescriptionKey]];
              
-             completion = [NSNumber numberWithBool:NO];
-             block(completion, error);
+             completionStatus = [NSNumber numberWithBool:NO];
+             block(completionStatus, error);
          }
          
-         block(completion, nil);
+         block(completionStatus, error);
      }];
 }
 

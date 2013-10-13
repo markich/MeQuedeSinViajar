@@ -14,25 +14,33 @@
 
 @implementation NotificationViewController
 
+#pragma mark -
+#pragma mark Instantiation
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
+    
+    if (self)
+    {}
+    
     return self;
 }
+
+#pragma mark -
+#pragma mark View Lifecycle
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
 }
+
+#pragma mark -
+#pragma mark Memory Management
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

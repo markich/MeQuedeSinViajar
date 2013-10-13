@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "MQSVNotification.h"
+
 @interface ViewController : UIViewController <UIAlertViewDelegate>
 
 @property (strong, nonatomic) UISwitch *carpoolingSwitch;
@@ -15,5 +17,7 @@
 @property (strong, nonatomic) UIButton *twitterButton;
 @property (strong, nonatomic) UIButton *notificationButton;
 @property (strong, nonatomic) UISegmentedControl *badCompanySegmentedControl;
+
+@property (strong, nonatomic) MQSVNotification *mqsvNotification;
 
 @end

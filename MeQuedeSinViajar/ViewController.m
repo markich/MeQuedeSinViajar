@@ -17,11 +17,27 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
 }
 
 - (void)sendNotification
-{}
+{
+    [[APIService sharedService] sendNotificationWith:self.mqsvNotification andCompletionBlock:^(id returnedObject, NSError *error)
+     {
+         NSLog(@"JSONResponse: %@", returnedObject);
+         
+         if (!error)
+         {
+             [SVProgressHUD dismissWithSuccess:@"Done"];
+         }
+         else
+         {
+             [SVProgressHUD dismissWithError:[error localizedDescription]];
+         }
+         
+         [self.resultsTable reloadData];
+     }];
+}
 
 - (void)didReceiveMemoryWarning
 {

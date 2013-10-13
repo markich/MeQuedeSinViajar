@@ -18,6 +18,6 @@ typedef void (^APIServiceCompletionBlock)(id returnedObject, NSError *error);
 
 + (APIService *)sharedService;
 
-- (void)sendNotificationWith:(MQSVNotification *)notification CompletionBlock:(APIServiceCompletionBlock)block;
+- (void)sendNotificationWith:(MQSVNotification *)notification andCompletionBlock:(APIServiceCompletionBlock)block;
 
 @end
