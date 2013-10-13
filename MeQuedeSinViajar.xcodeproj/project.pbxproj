@@ -41,6 +41,8 @@
 		80A370B4180A4E2100533668 /* MQSVNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A370B3180A4E2100533668 /* MQSVNotification.m */; };
 		80A370B9180AE2CA00533668 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 80A370B6180AE2CA00533668 /* SVProgressHUD.bundle */; };
 		80A370BA180AE2CA00533668 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A370B8180AE2CA00533668 /* SVProgressHUD.m */; };
+		80A370BE180AE45400533668 /* GreetingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A370BC180AE45400533668 /* GreetingsViewController.m */; };
+		80A370BF180AE45400533668 /* GreetingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80A370BD180AE45400533668 /* GreetingsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +115,9 @@
 		80A370B6180AE2CA00533668 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = External/SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
 		80A370B7180AE2CA00533668 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = External/SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
 		80A370B8180AE2CA00533668 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = External/SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		80A370BB180AE45400533668 /* GreetingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreetingsViewController.h; sourceTree = "<group>"; };
+		80A370BC180AE45400533668 /* GreetingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GreetingsViewController.m; sourceTree = "<group>"; };
+		80A370BD180AE45400533668 /* GreetingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GreetingsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +221,7 @@
 		80A37076180A182D00533668 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
+				80A370BD180AE45400533668 /* GreetingsViewController.xib */,
 				80A37053180A151500533668 /* Main.storyboard */,
 				80A3707B180A189500533668 /* NotificationViewController.xib */,
 			);
@@ -225,10 +231,12 @@
 		80A37077180A183900533668 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				80A37056180A151500533668 /* ViewController.h */,
-				80A37057180A151500533668 /* ViewController.m */,
+				80A370BB180AE45400533668 /* GreetingsViewController.h */,
+				80A370BC180AE45400533668 /* GreetingsViewController.m */,
 				80A37079180A189500533668 /* NotificationViewController.h */,
 				80A3707A180A189500533668 /* NotificationViewController.m */,
+				80A37056180A151500533668 /* ViewController.h */,
+				80A37057180A151500533668 /* ViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -397,6 +405,7 @@
 				80A3707D180A189500533668 /* NotificationViewController.xib in Resources */,
 				80A3704C180A151500533668 /* InfoPlist.strings in Resources */,
 				80A37055180A151500533668 /* Main.storyboard in Resources */,
+				80A370BF180AE45400533668 /* GreetingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +433,7 @@
 				80A37052180A151500533668 /* AppDelegate.m in Sources */,
 				80A370B0180A49B000533668 /* SBJsonWriter.m in Sources */,
 				80A37089180A219700533668 /* MQSVRequest.m in Sources */,
+				80A370BE180AE45400533668 /* GreetingsViewController.m in Sources */,
 				80A370A8180A49B000533668 /* SBJsonStreamParserAccumulator.m in Sources */,
 				80A370A6180A49B000533668 /* SBJsonParser.m in Sources */,
 				80A370A5180A49B000533668 /* NSObject+SBJson.m in Sources */,
