@@ -35,9 +35,7 @@ typedef void (^MQSVRequestCompletionBlock)(MQSVRequest *request, NSInteger httpS
 
 + (id)performRequestWithPath:(NSString *)path method:(NSString *)httpMethod completionBlock:(MQSVRequestCompletionBlock)completion;
 + (id)requestWithPath:(NSString *)path method:(NSString *)httpMethod;
-+ (id)requestWithPath:(NSString *)path method:(NSString *)httpMethod requestType:(NSString *)type;
 - (id)initWithPath:(NSString *)path method:(NSString *)httpMethod;
-- (id)initWithPath:(NSString *)path method:(NSString *)httpMethod requestType:(NSString *)type;
 
 - (void)startWithCompletionBlock:(MQSVRequestCompletionBlock)completionBlock;
 - (void)stop;

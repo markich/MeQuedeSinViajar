@@ -17,7 +17,7 @@
 @property (nonatomic, readwrite, copy) NSString *requestType;
 @property (nonatomic, strong) NSURLConnection *connection;
 @property (nonatomic, readwrite, copy) NSHTTPURLResponse *httpURLResponse;
-@property (nonatomic, copy) NSString *formParameterString;
+@property (nonatomic, copy) NSData *formParameterString;
 
 - (NSURL *)requestURLWithPath:(NSString *)path;
 - (void)performCompletionBlockOnMainThreadWithJSON:(id)jsonObject;
@@ -42,33 +42,16 @@
     return [[self alloc] initWithPath:path method:httpMethod];
 }
 
-+ (id)requestWithPath:(NSString *)path method:(NSString *)httpMethod requestType:(NSString *)type
-{
-    return [[self alloc] initWithPath:path method:httpMethod requestType:type];
-}
-
-- (id)initWithPath:(NSString *)path method:(NSString *)method requestType:(NSString *)type
-{
-    self = [super init];
-    if (!self)
-        return nil;
-    
-    _path = [path copy];
-    _httpMethod = [method copy];
-    _requestType = [type copy];
-    
-    return self;
-}
-
 - (id)initWithPath:(NSString *)path method:(NSString *)method
 {
     self = [super init];
     if (!self)
+    {
         return nil;
+    }
     
     _path = [path copy];
     _httpMethod = [method copy];
-    _requestType = @"1";
     
     return self;
 }
@@ -96,11 +79,11 @@
     [request setHTTPMethod:self.httpMethod];
 	[request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
 	[request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-    
+
     BOOL shouldEmbedParameters = [self.formParameterString length] > 0 && ([self.httpMethod isEqualToString:@"POST"] || [self.httpMethod isEqualToString:@"PUT"]);
     if (shouldEmbedParameters)
     {
-        [request setHTTPBody:[self.formParameterString dataUsingEncoding:NSUTF8StringEncoding]];
+        [request setHTTPBody:self.formParameterString];
     }
     
     self.connection = [NSURLConnection connectionWithRequest:request delegate:self];
@@ -223,26 +206,12 @@
 
 - (void)setFormParameters:(NSDictionary *)params
 {
-    NSStringEncoding encoding = NSUTF8StringEncoding;
+    SBJsonWriter *jsonWriter = [[SBJsonWriter alloc] init];
     
-    NSMutableString *parameterString = [NSMutableString string];
+    NSLog(@"JSON PAYLOAD: %@",[jsonWriter stringWithObject:params]);
+    NSData *requestData = [[jsonWriter stringWithObject:params] dataUsingEncoding:NSUTF8StringEncoding];
     
-    for (NSString *paramKey in params)
-    {
-        NSString *value = [params objectForKey:paramKey];
-        
-        CFStringEncoding convertedEncoding = CFStringConvertNSStringEncodingToEncoding(encoding);
-        NSString *addString = @"&=+";
-        NSString *escapedString = (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (CFStringRef)value, (CFStringRef)nil, (CFStringRef)addString, convertedEncoding));
-        
-        NSString *encodedValue = escapedString;
-        
-        NSUInteger length = [parameterString length];
-        NSString *paramFormat = (length == 0 ? @"%@=%@" : @"&%@=%@");
-        [parameterString appendFormat:paramFormat, encodedValue];
-    }
-    
-    self.formParameterString = parameterString;
+    self.formParameterString = requestData;
 }
 
 @end
