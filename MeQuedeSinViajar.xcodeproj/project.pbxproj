@@ -21,6 +21,24 @@
 		80A37063180A151500533668 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80A37045180A151500533668 /* UIKit.framework */; };
 		80A3706B180A151500533668 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80A37069180A151500533668 /* InfoPlist.strings */; };
 		80A3706D180A151500533668 /* MeQuedeSinViajarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A3706C180A151500533668 /* MeQuedeSinViajarTests.m */; };
+		80A3707C180A189500533668 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A3707A180A189500533668 /* NotificationViewController.m */; };
+		80A3707D180A189500533668 /* NotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80A3707B180A189500533668 /* NotificationViewController.xib */; };
+		80A37082180A1E0800533668 /* Service.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A37081180A1E0800533668 /* Service.m */; };
+		80A37085180A1EA400533668 /* APIService.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A37084180A1EA400533668 /* APIService.m */; };
+		80A37089180A219700533668 /* MQSVRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A37088180A219700533668 /* MQSVRequest.m */; };
+		80A370A5180A49B000533668 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A3708D180A49B000533668 /* NSObject+SBJson.m */; };
+		80A370A6180A49B000533668 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A37090180A49B000533668 /* SBJsonParser.m */; };
+		80A370A7180A49B000533668 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A37092180A49B000533668 /* SBJsonStreamParser.m */; };
+		80A370A8180A49B000533668 /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A37094180A49B000533668 /* SBJsonStreamParserAccumulator.m */; };
+		80A370A9180A49B000533668 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A37096180A49B000533668 /* SBJsonStreamParserAdapter.m */; };
+		80A370AA180A49B000533668 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A37098180A49B000533668 /* SBJsonStreamParserState.m */; };
+		80A370AB180A49B000533668 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A3709A180A49B000533668 /* SBJsonStreamWriter.m */; };
+		80A370AC180A49B000533668 /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A3709C180A49B000533668 /* SBJsonStreamWriterAccumulator.m */; };
+		80A370AD180A49B000533668 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A3709E180A49B000533668 /* SBJsonStreamWriterState.m */; };
+		80A370AE180A49B000533668 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A370A0180A49B000533668 /* SBJsonTokeniser.m */; };
+		80A370AF180A49B000533668 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A370A2180A49B000533668 /* SBJsonUTF8Stream.m */; };
+		80A370B0180A49B000533668 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A370A4180A49B000533668 /* SBJsonWriter.m */; };
+		80A370B4180A4E2100533668 /* MQSVNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A370B3180A4E2100533668 /* MQSVNotification.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +71,43 @@
 		80A37068180A151500533668 /* MeQuedeSinViajarTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MeQuedeSinViajarTests-Info.plist"; sourceTree = "<group>"; };
 		80A3706A180A151500533668 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		80A3706C180A151500533668 /* MeQuedeSinViajarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeQuedeSinViajarTests.m; sourceTree = "<group>"; };
+		80A37079180A189500533668 /* NotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
+		80A3707A180A189500533668 /* NotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
+		80A3707B180A189500533668 /* NotificationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationViewController.xib; sourceTree = "<group>"; };
+		80A37080180A1E0800533668 /* Service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Service.h; sourceTree = "<group>"; };
+		80A37081180A1E0800533668 /* Service.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Service.m; sourceTree = "<group>"; };
+		80A37083180A1EA400533668 /* APIService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIService.h; sourceTree = "<group>"; };
+		80A37084180A1EA400533668 /* APIService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIService.m; sourceTree = "<group>"; };
+		80A37086180A1ECD00533668 /* MQSVAppConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQSVAppConfiguration.h; sourceTree = "<group>"; };
+		80A37087180A219700533668 /* MQSVRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQSVRequest.h; sourceTree = "<group>"; };
+		80A37088180A219700533668 /* MQSVRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQSVRequest.m; sourceTree = "<group>"; };
+		80A3708C180A49B000533668 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+SBJson.h"; path = "External/JSON/NSObject+SBJson.h"; sourceTree = "<group>"; };
+		80A3708D180A49B000533668 /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+SBJson.m"; path = "External/JSON/NSObject+SBJson.m"; sourceTree = "<group>"; };
+		80A3708E180A49B000533668 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJson.h; path = External/JSON/SBJson.h; sourceTree = "<group>"; };
+		80A3708F180A49B000533668 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonParser.h; path = External/JSON/SBJsonParser.h; sourceTree = "<group>"; };
+		80A37090180A49B000533668 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonParser.m; path = External/JSON/SBJsonParser.m; sourceTree = "<group>"; };
+		80A37091180A49B000533668 /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParser.h; path = External/JSON/SBJsonStreamParser.h; sourceTree = "<group>"; };
+		80A37092180A49B000533668 /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParser.m; path = External/JSON/SBJsonStreamParser.m; sourceTree = "<group>"; };
+		80A37093180A49B000533668 /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParserAccumulator.h; path = External/JSON/SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		80A37094180A49B000533668 /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserAccumulator.m; path = External/JSON/SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		80A37095180A49B000533668 /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParserAdapter.h; path = External/JSON/SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		80A37096180A49B000533668 /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserAdapter.m; path = External/JSON/SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		80A37097180A49B000533668 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParserState.h; path = External/JSON/SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		80A37098180A49B000533668 /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserState.m; path = External/JSON/SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		80A37099180A49B000533668 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriter.h; path = External/JSON/SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		80A3709A180A49B000533668 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriter.m; path = External/JSON/SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		80A3709B180A49B000533668 /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriterAccumulator.h; path = External/JSON/SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		80A3709C180A49B000533668 /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriterAccumulator.m; path = External/JSON/SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		80A3709D180A49B000533668 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriterState.h; path = External/JSON/SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		80A3709E180A49B000533668 /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriterState.m; path = External/JSON/SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		80A3709F180A49B000533668 /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonTokeniser.h; path = External/JSON/SBJsonTokeniser.h; sourceTree = "<group>"; };
+		80A370A0180A49B000533668 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonTokeniser.m; path = External/JSON/SBJsonTokeniser.m; sourceTree = "<group>"; };
+		80A370A1180A49B000533668 /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonUTF8Stream.h; path = External/JSON/SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		80A370A2180A49B000533668 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonUTF8Stream.m; path = External/JSON/SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		80A370A3180A49B000533668 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonWriter.h; path = External/JSON/SBJsonWriter.h; sourceTree = "<group>"; };
+		80A370A4180A49B000533668 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = External/JSON/SBJsonWriter.m; sourceTree = "<group>"; };
+		80A370B2180A4E2100533668 /* MQSVNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQSVNotification.h; sourceTree = "<group>"; };
+		80A370B3180A4E2100533668 /* MQSVNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQSVNotification.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +167,12 @@
 		80A37047180A151500533668 /* MeQuedeSinViajar */ = {
 			isa = PBXGroup;
 			children = (
-				80A37050180A151500533668 /* AppDelegate.h */,
-				80A37051180A151500533668 /* AppDelegate.m */,
-				80A37053180A151500533668 /* Main.storyboard */,
-				80A37056180A151500533668 /* ViewController.h */,
-				80A37057180A151500533668 /* ViewController.m */,
+				80A370B1180A4E0700533668 /* Model */,
+				80A3707F180A1DE300533668 /* Helpers */,
+				80A3707E180A1DDC00533668 /* External */,
+				80A37078180A183F00533668 /* Delegate */,
+				80A37077180A183900533668 /* Controllers */,
+				80A37076180A182D00533668 /* Interfaces */,
 				80A37059180A151500533668 /* Images.xcassets */,
 				80A37048180A151500533668 /* Supporting Files */,
 			);
@@ -150,6 +206,98 @@
 				80A37069180A151500533668 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80A37076180A182D00533668 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				80A37053180A151500533668 /* Main.storyboard */,
+				80A3707B180A189500533668 /* NotificationViewController.xib */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+		80A37077180A183900533668 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				80A37056180A151500533668 /* ViewController.h */,
+				80A37057180A151500533668 /* ViewController.m */,
+				80A37079180A189500533668 /* NotificationViewController.h */,
+				80A3707A180A189500533668 /* NotificationViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		80A37078180A183F00533668 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				80A37050180A151500533668 /* AppDelegate.h */,
+				80A37051180A151500533668 /* AppDelegate.m */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		80A3707E180A1DDC00533668 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				80A3708A180A499000533668 /* JSON */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		80A3707F180A1DE300533668 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				80A37080180A1E0800533668 /* Service.h */,
+				80A37081180A1E0800533668 /* Service.m */,
+				80A37083180A1EA400533668 /* APIService.h */,
+				80A37084180A1EA400533668 /* APIService.m */,
+				80A37086180A1ECD00533668 /* MQSVAppConfiguration.h */,
+				80A37087180A219700533668 /* MQSVRequest.h */,
+				80A37088180A219700533668 /* MQSVRequest.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		80A3708A180A499000533668 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				80A3708C180A49B000533668 /* NSObject+SBJson.h */,
+				80A3708D180A49B000533668 /* NSObject+SBJson.m */,
+				80A3708E180A49B000533668 /* SBJson.h */,
+				80A3708F180A49B000533668 /* SBJsonParser.h */,
+				80A37090180A49B000533668 /* SBJsonParser.m */,
+				80A37091180A49B000533668 /* SBJsonStreamParser.h */,
+				80A37092180A49B000533668 /* SBJsonStreamParser.m */,
+				80A37093180A49B000533668 /* SBJsonStreamParserAccumulator.h */,
+				80A37094180A49B000533668 /* SBJsonStreamParserAccumulator.m */,
+				80A37095180A49B000533668 /* SBJsonStreamParserAdapter.h */,
+				80A37096180A49B000533668 /* SBJsonStreamParserAdapter.m */,
+				80A37097180A49B000533668 /* SBJsonStreamParserState.h */,
+				80A37098180A49B000533668 /* SBJsonStreamParserState.m */,
+				80A37099180A49B000533668 /* SBJsonStreamWriter.h */,
+				80A3709A180A49B000533668 /* SBJsonStreamWriter.m */,
+				80A3709B180A49B000533668 /* SBJsonStreamWriterAccumulator.h */,
+				80A3709C180A49B000533668 /* SBJsonStreamWriterAccumulator.m */,
+				80A3709D180A49B000533668 /* SBJsonStreamWriterState.h */,
+				80A3709E180A49B000533668 /* SBJsonStreamWriterState.m */,
+				80A3709F180A49B000533668 /* SBJsonTokeniser.h */,
+				80A370A0180A49B000533668 /* SBJsonTokeniser.m */,
+				80A370A1180A49B000533668 /* SBJsonUTF8Stream.h */,
+				80A370A2180A49B000533668 /* SBJsonUTF8Stream.m */,
+				80A370A3180A49B000533668 /* SBJsonWriter.h */,
+				80A370A4180A49B000533668 /* SBJsonWriter.m */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		80A370B1180A4E0700533668 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				80A370B2180A4E2100533668 /* MQSVNotification.h */,
+				80A370B3180A4E2100533668 /* MQSVNotification.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80A3705A180A151500533668 /* Images.xcassets in Resources */,
+				80A3707D180A189500533668 /* NotificationViewController.xib in Resources */,
 				80A3704C180A151500533668 /* InfoPlist.strings in Resources */,
 				80A37055180A151500533668 /* Main.storyboard in Resources */,
 			);
@@ -249,9 +398,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80A370AE180A49B000533668 /* SBJsonTokeniser.m in Sources */,
+				80A37085180A1EA400533668 /* APIService.m in Sources */,
+				80A37082180A1E0800533668 /* Service.m in Sources */,
+				80A370AA180A49B000533668 /* SBJsonStreamParserState.m in Sources */,
 				80A37058180A151500533668 /* ViewController.m in Sources */,
+				80A3707C180A189500533668 /* NotificationViewController.m in Sources */,
 				80A37052180A151500533668 /* AppDelegate.m in Sources */,
+				80A370B0180A49B000533668 /* SBJsonWriter.m in Sources */,
+				80A37089180A219700533668 /* MQSVRequest.m in Sources */,
+				80A370A8180A49B000533668 /* SBJsonStreamParserAccumulator.m in Sources */,
+				80A370A6180A49B000533668 /* SBJsonParser.m in Sources */,
+				80A370A5180A49B000533668 /* NSObject+SBJson.m in Sources */,
+				80A370AF180A49B000533668 /* SBJsonUTF8Stream.m in Sources */,
 				80A3704E180A151500533668 /* main.m in Sources */,
+				80A370AC180A49B000533668 /* SBJsonStreamWriterAccumulator.m in Sources */,
+				80A370AB180A49B000533668 /* SBJsonStreamWriter.m in Sources */,
+				80A370AD180A49B000533668 /* SBJsonStreamWriterState.m in Sources */,
+				80A370A7180A49B000533668 /* SBJsonStreamParser.m in Sources */,
+				80A370A9180A49B000533668 /* SBJsonStreamParserAdapter.m in Sources */,
+				80A370B4180A4E2100533668 /* MQSVNotification.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
