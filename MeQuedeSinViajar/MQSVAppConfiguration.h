@@ -8,8 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-#define MQSV_BASE_API_URL @"me-quede-sin-viajar.herokuapp.com/"
+#define MQSV_BASE_API_URL @"http://me-quede-sin-viajar.herokuapp.com/"
 
 #define HTTP_GET_METHOD @"GET"
 #define HTTP_POST_METHOD @"POST"
 #define HTTP_PUT_METHOD @"PUT"
+
+#define MQSV_MAIN_ALERT_TAG 1111
