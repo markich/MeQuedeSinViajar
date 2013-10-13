@@ -39,6 +39,8 @@
 		80A370AF180A49B000533668 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A370A2180A49B000533668 /* SBJsonUTF8Stream.m */; };
 		80A370B0180A49B000533668 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A370A4180A49B000533668 /* SBJsonWriter.m */; };
 		80A370B4180A4E2100533668 /* MQSVNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A370B3180A4E2100533668 /* MQSVNotification.m */; };
+		80A370B9180AE2CA00533668 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 80A370B6180AE2CA00533668 /* SVProgressHUD.bundle */; };
+		80A370BA180AE2CA00533668 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A370B8180AE2CA00533668 /* SVProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +110,9 @@
 		80A370A4180A49B000533668 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = External/JSON/SBJsonWriter.m; sourceTree = "<group>"; };
 		80A370B2180A4E2100533668 /* MQSVNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQSVNotification.h; sourceTree = "<group>"; };
 		80A370B3180A4E2100533668 /* MQSVNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQSVNotification.m; sourceTree = "<group>"; };
+		80A370B6180AE2CA00533668 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = External/SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		80A370B7180AE2CA00533668 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = External/SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		80A370B8180AE2CA00533668 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = External/SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				80A3708A180A499000533668 /* JSON */,
+				80A370B5180AE2A300533668 /* SVProgressHUD */,
 			);
 			name = External;
 			sourceTree = "<group>";
@@ -298,6 +304,16 @@
 				80A370B3180A4E2100533668 /* MQSVNotification.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		80A370B5180AE2A300533668 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				80A370B6180AE2CA00533668 /* SVProgressHUD.bundle */,
+				80A370B7180AE2CA00533668 /* SVProgressHUD.h */,
+				80A370B8180AE2CA00533668 /* SVProgressHUD.m */,
+			);
+			name = SVProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,6 +392,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80A370B9180AE2CA00533668 /* SVProgressHUD.bundle in Resources */,
 				80A3705A180A151500533668 /* Images.xcassets in Resources */,
 				80A3707D180A189500533668 /* NotificationViewController.xib in Resources */,
 				80A3704C180A151500533668 /* InfoPlist.strings in Resources */,
@@ -415,6 +432,7 @@
 				80A370AC180A49B000533668 /* SBJsonStreamWriterAccumulator.m in Sources */,
 				80A370AB180A49B000533668 /* SBJsonStreamWriter.m in Sources */,
 				80A370AD180A49B000533668 /* SBJsonStreamWriterState.m in Sources */,
+				80A370BA180AE2CA00533668 /* SVProgressHUD.m in Sources */,
 				80A370A7180A49B000533668 /* SBJsonStreamParser.m in Sources */,
 				80A370A9180A49B000533668 /* SBJsonStreamParserAdapter.m in Sources */,
 				80A370B4180A4E2100533668 /* MQSVNotification.m in Sources */,
