@@ -10,4 +10,8 @@
 
 @interface NotificationViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIButton *aceptButton;
+
+- (IBAction)doAcceptTriggered:(id)sender;
+
 @end

@@ -36,6 +36,14 @@
 }
 
 #pragma mark -
+#pragma mark IBAction Methods
+
+- (IBAction)doAcceptTriggered:(id)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma mark -
 #pragma mark Memory Management
 
 - (void)didReceiveMemoryWarning
