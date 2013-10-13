@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UIAlertViewDelegate>
+
+@property (strong, nonatomic) UISwitch *carpoolingSwitch;
+@property (strong, nonatomic) UIButton *facebookButton;
+@property (strong, nonatomic) UIButton *twitterButton;
+@property (strong, nonatomic) UIButton *notificationButton;
+@property (strong, nonatomic) UISegmentedControl *badCompanySegmentedControl;
 
 @end

@@ -9,7 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+- (void)sendNotification;
 @end
 
 @implementation ViewController
@@ -19,6 +19,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
+
+- (void)sendNotification
+{}
 
 - (void)didReceiveMemoryWarning
 {
