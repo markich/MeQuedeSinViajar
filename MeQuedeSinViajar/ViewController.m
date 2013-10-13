@@ -10,15 +10,22 @@
 
 @interface ViewController ()
 - (void)sendNotification;
+- (void)showGreetingsController;
 @end
 
 @implementation ViewController
+
+#pragma mark -
+#pragma mark View Lifecycle
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
 }
+
+#pragma mark -
+#pragma mark Private Methods
 
 - (void)sendNotification
 {
@@ -35,14 +42,21 @@
              [SVProgressHUD dismissWithError:[error localizedDescription]];
          }
          
-         [self.resultsTable reloadData];
+         [self showGreetingsController];
      }];
 }
+
+- (void)showGreetingsController
+{
+    
+}
+
+#pragma mark -
+#pragma mark Memory Management
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

@@ -16,4 +16,5 @@
     #import "APIService.h"
     #import "Service.h"
     #import "MQSVAppConfiguration.h"
+    #import "SVProgressHUD.h"
 #endif
