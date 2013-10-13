@@ -67,7 +67,7 @@
     [encoder encodeObject:self.notificationLatitude forKey:@"Latitude"];
     [encoder encodeObject:self.notificationLongitude forKey:@"Longitude"];
     [encoder encodeObject:self.notificationCompany forKey:@"Company"];
-    [encoder encodeBool:self.notificationCarPooling forKey:@"CarPooling"];
+    [encoder encodeObject:self.notificationCarPooling forKey:@"CarPooling"];
 }
 
 - (id)initWithCoder:(NSCoder *)decoder
@@ -79,7 +79,7 @@
         self.notificationLatitude = [decoder decodeObjectForKey:@"Latitude"];
         self.notificationLongitude = [decoder decodeObjectForKey:@"Longitude"];
         self.notificationCompany = [decoder decodeObjectForKey:@"Company"];
-        self.notificationCarPooling = [decoder decodeBoolForKey:@"CarPooling"];
+        self.notificationCarPooling = [decoder decodeObjectForKey:@"CarPooling"];
     }
     
     return self;
@@ -127,7 +127,7 @@
     
     if (self.notificationCarPooling)
     {
-        [morphedDictionary setObject:[NSNumber numberWithBool:self.notificationCarPooling] forKey:@"car_pooling"];
+        [morphedDictionary setObject:self.notificationCarPooling forKey:@"car_pooling"];
     }
     
     if ([[morphedDictionary allKeys] count] == 0)
@@ -135,10 +135,12 @@
         [morphedDictionary setObject:self.notificationLatitude forKey:@"latitude"];
         [morphedDictionary setObject:self.notificationLongitude forKey:@"longitude"];
         [morphedDictionary setObject:self.notificationCompany forKey:@"company"];
-        [morphedDictionary setObject:[NSNumber numberWithBool:self.notificationCarPooling] forKey:@"car_pooling"];
+        [morphedDictionary setObject:self.notificationCarPooling forKey:@"car_pooling"];
     }
     
-    return morphedDictionary;
+    NSDictionary *dictionary = [NSDictionary dictionaryWithDictionary:(NSDictionary *)morphedDictionary];
+    
+    return dictionary;
 }
 
 @end

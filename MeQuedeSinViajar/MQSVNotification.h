@@ -13,7 +13,7 @@
 @property (strong, nonatomic) NSNumber *notificationLatitude;
 @property (strong, nonatomic) NSNumber *notificationLongitude;
 @property (strong, nonatomic) NSString *notificationCompany;
-@property (assign, nonatomic) BOOL notificationCarPooling;
+@property (assign, nonatomic) NSString *notificationCarPooling;
 
 - (id)initWithDictionary:(NSDictionary *)dictionary;
 + (id)notificationWithDictionary:(NSDictionary *)dictionary;
